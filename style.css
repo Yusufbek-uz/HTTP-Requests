@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.inputs {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+    input {
+        padding: 18px 30px;
+        border-radius: 20px;
+        outline: none;
+        border: 1px solid #00000033;
+    }
+
+    ::placeholder {
+        color: black;
+    }
+
+    #btn {
+        padding: 18px 40px;
+        border-radius: 10px;
+        background-color: #423CF2;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        border: none;
+    }
+}
+@media(max-width:800px){
+    body{
+        margin: 0 auto;
+    }
+    .inputs {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 40px;
+        margin: 40px 0;
+        flex-direction: column;
+        input {
+            padding: 18px 30px;
+            border-radius: 20px;
+            outline: none;
+            border: 1px solid #00000033;
+        }
+    
+        ::placeholder {
+            color: black;
+        }
+    
+        #btn {
+            padding: 18px 40px;
+            border-radius: 10px;
+            background-color: #423CF2;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            border: none;
+        }
+    }
+    .todu {
+        text-align: left;
+        display: flex;
+        width: 200px;
+        height: 70px;
+        gap: 50px;
+        margin: 80px 0;
+        flex-wrap: wrap;
+        img{
+            position: relative;
+            top: 0px;
+            width: 80px;
+            height: 80px;
+        }
+        #p{
+            position: absolute;
+            text-align: center;
+        }
+        .todu-all{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            border-bottom: none;
+            /* padding: 0px 70px 85px 20px; */
+            gap: 20px;
+            flex-direction: column;
+        }
+        .edits{
+            width: 100px;
+            gap: 10px;
+            display: flex;
+            /* font-size: 35px; */
+            button{
+                padding: 0px 20px;
+                font-size: 30px;
+                border: none;
+            }
+        }
+    }
+}
+.todu {
+    display: flex;
+    width: 1000px;
+    height: 70px;
+    gap: 50px;
+    margin: 50px 0;
+    img{
+        position: relative;
+        top: 0px;
+    }
+    #p{
+        position: absolute;
+        text-align: center;
+    }
+    .todu-all{
+        width: 850px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid rgba(133, 131, 131, 0.721);
+        padding: 0px 70px 85px 20px;
+    }
+    .edits{
+        width: 100px;
+        gap: 10px;
+        display: flex;
+        font-size: 35px;
+        button{
+            padding: 0px 20px;
+            font-size: 30px;
+            border: none;
+        }
+    }
+}
